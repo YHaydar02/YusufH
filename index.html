@@ -1,3 +1,87 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  background-color: #696969;
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: right;
+  padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 100%;}
+
+html {
+  font-family: sans-serif;
+}
+
+.header {
+  color: #708090;
+  text-align: center;
+  padding: 15px;
+}
+
+.body{
+  color: #708090;
+ }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 2px;
+  margin-bottom: 3px;
+  color: #708090; 
+  rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  color: #696969;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>YusufH</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 menu">
+    <ul>
+	    <li><strong>home</strong></li>
+	    <li><a href=about.html>about</a></li>
+    </ul>
+  </div>
+
+  <div class="col-9 body">
+    <h1>home</h1>
+    <p>Recently seen the World!</p>
+    <p>You can learn about me and who I am by reading the <a href=about.html>about</a> page.</p>
+  </div>
+</div>
+
+</body>
 </html>
+
