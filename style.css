@@ -1,6 +1,7 @@
 * {
   background-color: #ffffff;
   box-sizing: border-box;
+//  border: 15px solid green;
 }
 
 a {
@@ -19,10 +20,7 @@ a {
   padding: 2%;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
+.col-1 {width: 20%;}
 
 html {
   font-family: "Courier New", Courier, monospace;
@@ -30,7 +28,6 @@ html {
 
 .header {
   color: #4d4d4d;
-  font-size: 100%;
   text-align: center;
   padding: 2%;
 }
@@ -38,25 +35,12 @@ html {
 .body{
   color: #4d4d4d;
   padding-left: 25%;
+  width: 80%;
  }
 
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 10%;
-}
-
 .menu li {
-  padding: 1%;
+  list-style-type: none;
   margin-bottom: 1%;
   color: #4d4d4d; 
   rgba(0,0,0,0.24);
 }
-
-/*
-.menu li:hover {
-  color: #696969;
-}
-*/
-
