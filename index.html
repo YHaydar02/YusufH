@@ -2,11 +2,12 @@
 <html>
 <head>
 <meta title="Yusuf Haydar" name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 <style>
 *{
-  
   font-family: monospace;
   margin:0;
+  text-decoration: none;
 }
 body{
   text-align:center;
@@ -17,11 +18,12 @@ input[type="checkbox"],label{
   float:left;
   padding:2px;
   cursor:pointer;
-  display:inline-block;
+  text-indent:4px;
+  
 }
 input[type="checkbox"]:checked ~ *{
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #2e302e;
+  color: #e2ffe0;
 }
 img{
   position:sticky;
@@ -55,20 +57,30 @@ img{
     border-color: transparent
   }
 }
-#footer{padding: 100px;}
- .footer-text{margin:0;}
-justify-content: center;
+#footer{padding: 500px;}
+.socialbtn {
+    &:hover {
+      background: #E71D36;
+    }
+  }
+}
 </style>
 </head>
 
 <body>
-  <input type="checkbox" id="dm" name="Dark Mode">
-  <label for="dm">Dark Mode</label>
+  <input type="checkbox">
+<label>Dark Mode</label>
   <div>
   <img src="pic.jpg" alt="Me"> 
   </div>
   <div class="wrapper">
     <div class="typing-demo">My name is Yusuf(¬‿¬)</div>
+  </div>
+  <div class="socialbtn">
+    <a href="https://www.github.com/hayusuf"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/hayusuf_/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/yusuf-haydar-6196191aa"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/channel/UCQFZiYA7wvdzGbbNykycwFg?view_as=subscriber"><i class="fab fa-youtube"></i></a>
   </div>
   <div id="footer">
     <div class="footer-text">All Rights Reserved © 2020</div>
