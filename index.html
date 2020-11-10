@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta title="Yusuf Haydar" name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-root {
-  /* Light theme */
-  --c-light-text: #333;
-  --c-light-background: #fff;
-  /* Dark theme */
-  --c-dark-text: #fff;
-  --c-dark-background: #333;
-}
 *{
-  //border: 15px solid green;
-  text-align:center;
+  
   font-family: monospace;
-  --c-text: var(--c-light-text);
-  --c-background: var(--c-light-background);
+  margin:0;
 }
-dark-mode-checkbox:checked, 
-dark-mode-checkbox:checked + * {
-  --c-text: var(--c-dark-text);
-  --c-background: var(--c-dark-background);
+body{
+  text-align:center;
+  background-color: #ffffff;
+  color: #000000;
+}
+input[type="checkbox"],label{
+  float:left;
+  padding:2px;
+  cursor:pointer;
+  display:inline-block;
+}
+input[type="checkbox"]:checked ~ *{
+  background-color: #000000;
+  color: #ffffff;
 }
 img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position:sticky;
+  right:552px;
   width:300px;
-  height:auto;
   border-radius:50%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
-
 .wrapper {
-	  height: 30vh;
-	 display: flex;
-	 align-items: center;
-	 justify-content: center;
-	}
-	.typing-demo {
-	 width: 22ch;
-	   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-	     white-space: nowrap;
-	      overflow: hidden;
-	  border-right: 3px solid;
-	    font-family: monospace;
-	     font-size: 2em;
-	    }
-	    @keyframes typing {
-	        from {
-	    width: 0
-	      }
-	      }
-	      @keyframes blink {
-	        50% {
-	    border-color: transparent
-	}
-	}
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.typing-demo{
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 2em;
+}
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+#footer{padding: 100px;}
+ .footer-text{margin:0;}
+justify-content: center;
 </style>
 </head>
+
 <body>
-<input class="dark-mode-checkbox" type="checkbox">
-<img src="pic.jpg" alt="Me"> 
-<div class="wrapper">
-<div class="typing-demo">My name is Yusuf(¬‿¬)</div>
-</div>
-<p>You can check me out at:</p>
+  <input type="checkbox" id="dm" name="Dark Mode">
+  <label for="dm">Dark Mode</label>
+  <div>
+  <img src="https://lh3.googleusercontent.com/mFzhZcF48DWCPbXIW6DSkQjEE3yb8KarUZhpMKACd7PrewpavLsDQAbCowVSCoyldItKgRWmNFYcqZ2n92yRCaxz_HErwDx_5CO2s8AeUqccDegtFqSz3bCXLE-SnrP5dTwvI3K3oYcrjFd4XPJuUClRxE2qRdrzcfZ6E3RVF_krYri3VX0qjlkByyRigARyghMNIO9LaV0Z5-h2zOKKbMFCyQ6LW4qTA3I4fO5BLASUP7ToGvH6pExYV1L3RrmgiLHK851xxjtUGqY7GMv7YGDHgWw8ph3tVQZ97RNBEp3awQbSHEFS2VknuA-k4JXF6Ru7UOLMoY5s_C8hnizVxSox6NfdciqqcRVbs6c6TDY4xrlt6KXRFxWqIbLhmjra0F-VkmpvzERLNIcu6oTNPiQU6Qcyf5LW4gpsTnMmG6shoBTo9dPKBr-k-pqaY5f_UKRrXUr5NPH6HQi-09fC12hvJwlO_ZUMSKE5OL-adPIGvS5EAz4RjmQGJalrGvQrxCleisEM8RZpHJHqYEf5PmeTQTqlKH6MI9sak7Um6axNga12tLeVeRdJQk-3nS3J0VV6GFDr2AhWKB35yBlemwGjnzsXxWPYuJLLh_ATjiVbHypOAqKnrMwH3wa0vxytWE5gI10Q54vsQ1SedQJdj6X3oh06KAueE3pfJPKVigjPEGg1E40-wMYB_owcmg=w165-h220-no?authuser=0" alt="Me"> 
+  </div>
+  <div class="wrapper">
+    <div class="typing-demo">My name is Yusuf(¬‿¬)</div>
+  </div>
+  <div id="footer">
+    <div class="footer-text">All Rights Reserved © 2020</div>
+  </div>
 </body>
 </html>
